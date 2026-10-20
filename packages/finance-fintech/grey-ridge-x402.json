@@ -11,7 +11,7 @@
   "remotes": [
     {
       "type": "streamable-http",
-      "url": "https://api.greyridgesignals.ai/mcp"
+      "url": "https://x402-data-api.sigrunner.workers.dev/mcp"
     }
   ]
 }
