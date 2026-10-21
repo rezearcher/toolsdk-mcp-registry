@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Grey Ridge x402 Market Data",
+  "packageName": "@toolsdk-remote/greyridge-x402-data",
+  "description": "Hosted DeFi and crypto market-data server exposing 26 tools over MCP: live token prices, DEX/perp funding rates, DeFi yields, prediction-market odds, Base-chain RPC reads (block/gas/balance/receipt/token metadata), domain/tech-risk enrichment, pre-trade token-safety gates (honeypot and rug checks for Base ERC-20s), and MCP-server security scanning. tools/list and free-preview responses are unauthenticated; data-returning calls are pay-per-call via the x402 protocol (USDC on Base, $0.001-$0.05 per call) settled over an HTTP 402 challenge, so no account or API key is provisioned. Base-only chain reads.",
+  "url": "https://github.com/rezearcher/greyridge-x402-tools",
+  "readme": "https://github.com/rezearcher/greyridge-x402-tools#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Grey Ridge Signals",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://x402-data-api.sigrunner.workers.dev/mcp"
+    }
+  ]
+}
